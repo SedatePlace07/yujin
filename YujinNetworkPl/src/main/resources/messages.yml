@@ -1,0 +1,14 @@
+################################
+#     Messaggi  del plugin     #
+#         YujinNetwork         #
+################################
+
+valore_non_valido: "&cValore non valido!"
+no_perms: "&cNon hai il permesso di fare questo comando"
+non_abbastanza_argomenti: "&cNon abbastanza argomenti"
+giocatore_non_trovato: "&cGiocatore non trovato"
+eco_command: "&fUso: /eco <give|remove|set|reset> <player> <amount>"
+solo_giocatori: "&cSolo i giocatori possono usare questo comando!"
+modalita_non_valida: "&cModalità di gioco non valida"
+imposta_modalita: "&fModalità di gioco di %target% impostata su %modalita%"
+bilancio: "&aBilancio: &f%soldi%"

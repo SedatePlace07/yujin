@@ -1,0 +1,23 @@
+public void createMessagesConfig() {
+        File messagesFile = new File(plugin.getDataFolder(), "messages.yml");
+        if (!messagesFile.exists()) {
+            try {
+                messagesFile.createNewFile();
+                getLogger().info("Creazione del file messages.yml...");
+                plugin.saveResource("messages.yml", false);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        messagesConfig = YamlConfiguration.loadConfiguration(messagesFile);
+        messagesConfig.addDefault("valore_non_valido", "&cValore non valido!");
+        messagesConfig.addDefault("no_perms", "&cNon hai il permesso di fare questo comando");
+        messagesConfig.addDefault("non_abbastanza_argomenti", "&cNon abbastanza argomenti");
+        messagesConfig.addDefault("giocatore_non_trovato", "&cGiocatore non trovato");
+        messagesConfig.addDefault("eco_command", "&fUso: /eco <give|remove|set|reset> <player> <amount>");
+        messagesConfig.addDefault("solo_giocatori", "&cSolo i giocatori possono usare questo comando!");
+        messagesConfig.addDefault("modalita_non_valida", "&cModalità di gioco non valida");
+        messagesConfig.addDefault("imposta_modalita", "&fModalità di gioco di %target% impostata su %modalita%");
+        messagesConfig.addDefault("bilancio", "&aBilancio: &f%soldi%");
+        messagesConfig.options().copyDefaults(true);
+    }

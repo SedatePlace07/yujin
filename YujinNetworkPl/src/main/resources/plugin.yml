@@ -1,0 +1,22 @@
+name: YujinNetworkPl
+version: '${project.version}'
+author: SedatePlace
+
+main: org.sedateplace.yujinnetwork.YujinNetworkPl
+
+api-version: 1.19
+
+commands:
+  eco:
+    description: Economia
+  balance:
+    description: Controllo bilancio
+    aliases: [bal, money]
+  gamemode:
+    description: Cambia la modalità di gioco
+    aliases: [gm]
+  yujinnetwork:
+    description: Ricarica il plugin
+    aliases: [yuj,yujin,yn]
+  god:
+    description: Invincibilità
